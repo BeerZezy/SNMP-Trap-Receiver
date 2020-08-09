@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   });
   
   app.post('/hook', (req, res) => {
-    console.log('Trap Receiver', req.body.ip)
+    console.log('Trap Receiver', req.body)
   
     res.sendStatus(200)
   });
