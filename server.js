@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 3000
 
 const app = express()
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
     console.log('Run task by request')
